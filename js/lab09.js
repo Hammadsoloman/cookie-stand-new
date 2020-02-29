@@ -63,15 +63,15 @@ new Resturants('Lima','2','16','4.6');
 function headerh(){
   var trEl =document.createElement('tr');
   tableEl.appendChild(trEl);
-  var thE =document.createElement('th');
-  trEl.appendChild(thE);
-  thE.textContent = '';
+  var thElspace =document.createElement('th');
+  thElspace.textContent = ' ';
+  trEl.appendChild(thElspace);
   for(var i=0;i<h.length;i++){
-    var trEl =document.createElement('tr');
-    tableEl.appendChild(trEl);
+    // var trEl =document.createElement('tr');
+    // tableEl.appendChild(trEl);
    var thEl =document.createElement('th');
-    trEl.appendChild(thEl);
-    thEl.textContent = h[i];
+   thEl.textContent = h[i];
+   trEl.appendChild(thEl);
   }
   var thElT =document.createElement('th');
   trEl.appendChild(thElT);
@@ -111,7 +111,7 @@ function reFooter(){
     var totalh ;
     var totalA = 0 ;
     for(var j=0;j<h.length;j++){
-      var totalh=0;
+       totalh=0;
       for(var i=0;i<glop.length;i++){
         totalh += glop[i].totalCPH[j];
       }
