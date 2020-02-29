@@ -2,6 +2,7 @@
 var h =  ['06am','07am','08am','09am','10am','11am','12pm','01pm','02pm','03pm','04pm','05pm','06pm','07pm'];
 var glop = [];
 
+
 function Resturants(name,minC,maxC,avgC){
     this.name=name;
     this.minC=minC;
@@ -52,16 +53,19 @@ new Resturants('Paris',20,38,2.3);
 new Resturants('Lima',2,16,4.6);
 
 
+headerh();
 
 for(var i = 0;i<glop.length;i++){
   glop[i].render();
 }
 
+footer(trEl);
+
 var container =document.getElementById('cookie');
 var tableEl =document.createElement('table');
 container.appendChild(tableEl);
 var trEl = document.createElement('tr');
-footer(trEl);
+// footer(trEl);
 
 var resForm = document.getElementById('resN');
 resForm.addEventListener('submit',function(event){
@@ -81,8 +85,8 @@ resForm.addEventListener('submit',function(event){
 
 function headerh(){
     var trEl =document.createElement('tr');
-    tableEl.appendChild(trEl);
     var thEl =document.createElement('th');
+    tableEl.appendChild(trEl);
     trEl.appendChild(thEl);
     thEl.textContent = '';
     for(var i=0;i<h.length;i++){
