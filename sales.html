@@ -4,7 +4,7 @@
   <head>
     <title>cookie-stand</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
  </head>
   <body>
     <header>
@@ -14,27 +14,32 @@
       <div id="cookie">
       </div>
       <div id="resN">
-        <fieldset>
-          <legend>Add new Resturant</legend>
-        <label for="name">name of the Resturant</label>
-        <input type="text" id="name" placeholder="Enter Resturent name" required>
+        <form>
+          <fieldset>
+            <legend>Add new Resturant</legend>
+          <label for="name">name of the Resturant</label>
+          <input type="text" id="name" placeholder="Enter Resturent name" >
 
-        <label for="min">minimum Customers</label>
-        <input type="text" id="min" placeholder="minumum customers" >
+          <label for="min">minimum Customers</label>
+          <input type="number" id="min" placeholder="minumum customers" >
 
-        <label for="max">maximum Customer</label>
-        <input type="text" id="max" placeholder="enter maximum number of customers">
+          <label for="max">maximum Customer</label>
+          <input type="number" id="max" placeholder="enter maximum number of customers">
 
-        <label for="avg">Average cookeis per Customer</label>
-        <input type="text" id="avg" placeholder="enter average cookeis per Customer" max="10">
+          <label for="avg">Average cookeis per Customer</label>
+          <input type="number" id="avg" placeholder="enter average cookeis per Customer" >
+          
+          <button type="submit">submit</button>
 
-        <input type="submit">
-      </fieldset>
+         
+        </fieldset>
       </form>
 
-      </div>
-    </main>
-    <footer></footer>
+    </div>
+  </main>
+    <footer>
+      <h34>all copy right for Hammad</h34>
+    </footer>
     <!-- <script src="js/repo.js"></script> -->
     <script src="js/lab09.js"></script>
 
