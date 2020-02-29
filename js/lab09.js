@@ -88,7 +88,7 @@ resForm.addEventListener('submit',function(event){
   var max = event.target.max.value;
   var avg = event.target.avg.value;
   var resForm = new Resturants(name,min,max,avg);
-  tableEl.deleteRow(tableEl.rows.lenght-1)
+tableEl.deleteRow(glop.length)
 
   resForm.render();
 
@@ -135,5 +135,4 @@ for(var i = 0;i<glop.length;i++){
 }
 
 reFooter();
-
 
